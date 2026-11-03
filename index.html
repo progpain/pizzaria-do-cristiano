@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171614">
+  <meta name="description" content="Pizzaria Cristiano — uma história que começou em 1975.">
+  <title>Pizzaria Cristiano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Pizzaria Cristiano — início">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span class="brand-name">Cristiano<small>PIZZARIA · EST. 1975</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Nossa casa</a>
+    </nav>
+    <button class="header-cart contact-link" type="button" data-open-house>Conheça a casa <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> PIZZARIA CRISTIANO · EST. 1975</p>
+        <h1>Mais que pizza.<br><em>Uma história.</em></h1>
+        <p class="hero-copy">Uma casa feita de tradição, encontros<br>e bons momentos à mesa.</p>
+        <a class="hero-link" href="#sobre">Descubra a Cristiano <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-caption"><span class="caption-line"></span> UMA HISTÓRIA QUE COMEÇOU EM 1975</div>
+    </section>
+
+    <nav class="experience-section" aria-label="Explore a Pizzaria Cristiano">
+      <div class="experience-options">
+        <button class="experience-card" type="button" data-open-menu>
+          <span class="experience-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M7 25 25 7M10 8c5 0 8 3 8 8-5 0-8-3-8-8Zm4 16c0-5 3-8 8-8 0 5-3 8-8 8Z"/></svg>
+          </span>
+          <span class="experience-title">Cardápio</span>
+          <span class="experience-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="experience-card" type="button" data-open-wine>
+          <span class="experience-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M11 5h10l-1 10a4 4 0 0 1-8 0L11 5Zm4 14v7m-5 1h10m-9-17h8"/></svg>
+          </span>
+          <span class="experience-title">Carta de vinhos</span>
+          <span class="experience-arrow" aria-hidden="true">↗</span>
+        </button>
+        <article class="experience-card">
+          <span class="experience-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="m16 4 3.2 7.3 7.8.8-5.8 5.3 1.6 7.7-6.8-4-6.8 4 1.6-7.7L5 12.1l7.8-.8L16 4Z"/></svg>
+          </span>
+          <span class="experience-title">Indicações</span>
+          <span class="experience-arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </nav>
+
+    <dialog class="menu-section" id="cardapio" aria-labelledby="menu-title">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">PIZZARIA CRISTIANO · EST. 1975</p>
+          <h2 id="menu-title">Nosso cardápio<span>.</span></h2>
+        </div>
+        <div class="menu-heading-actions">
+          <p class="menu-intro">Vire as páginas e descubra nossos sabores.</p>
+          <button class="menu-close" type="button" aria-label="Fechar cardápio" data-close-menu>
+            <span aria-hidden="true">×</span> <span>Voltar ao app</span>
+          </button>
+        </div>
+      </div>
+      <div class="menu-book" aria-label="Cardápio digital">
+        <button class="page-control previous-page" type="button" aria-label="Página anterior" data-page-previous>
+          <span aria-hidden="true">←</span>
+        </button>
+        <div class="page-stage">
+          <div class="page-sheet">
+            <img class="menu-page" data-menu-page src="image/IMG_3723.jpg" alt="Página 1 do cardápio" fetchpriority="high">
+            <div class="page-turn" aria-hidden="true">
+              <img class="page-face page-front" data-page-front alt="">
+              <img class="page-face page-back" data-page-back alt="">
+            </div>
+          </div>
+        </div>
+        <button class="page-control next-page" type="button" aria-label="Próxima página" data-page-next>
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+      <div class="page-status">
+        <span class="page-status-line"></span>
+        <span data-page-status>PÁGINA 1 DE 11</span>
+        <span class="page-status-line"></span>
+      </div>
+    </dialog>
+
+    <dialog class="menu-section" id="carta-vinhos" aria-labelledby="wine-title">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">PIZZARIA CRISTIANO · EST. 1975</p>
+          <h2 id="wine-title">Carta de vinhos<span>.</span></h2>
+        </div>
+        <div class="menu-heading-actions">
+          <p class="menu-intro">Conheça nossos rótulos.</p>
+          <button class="menu-close" type="button" aria-label="Fechar carta de vinhos" data-close-wine>
+            <span aria-hidden="true">×</span> <span>Voltar ao app</span>
+          </button>
+        </div>
+      </div>
+      <div class="menu-book" aria-label="Carta de vinhos digital">
+        <button class="page-control previous-page" type="button" aria-label="Página anterior da carta de vinhos" data-wine-page-previous>
+          <span aria-hidden="true">←</span>
+        </button>
+        <div class="page-stage">
+          <div class="page-sheet">
+            <img class="menu-page" data-wine-page src="image/IMG_3735.jpg" alt="Página 1 da carta de vinhos" fetchpriority="high">
+            <div class="page-turn" aria-hidden="true">
+              <img class="page-face page-front" data-wine-page-front alt="">
+              <img class="page-face page-back" data-wine-page-back alt="">
+            </div>
+          </div>
+        </div>
+        <button class="page-control next-page" type="button" aria-label="Próxima página da carta de vinhos" data-wine-page-next>
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+      <div class="page-status">
+        <span class="page-status-line"></span>
+        <span data-wine-page-status>PÁGINA 1 DE 2</span>
+        <span class="page-status-line"></span>
+      </div>
+    </dialog>
+
+    <dialog class="menu-section house-gallery" id="nossa-casa" aria-labelledby="house-title">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">PIZZARIA CRISTIANO · EST. 1975</p>
+          <h2 id="house-title">Por dentro da nossa casa<span>.</span></h2>
+        </div>
+        <div class="menu-heading-actions">
+          <p class="menu-intro">Um lugar feito para bons encontros.</p>
+          <button class="menu-close" type="button" aria-label="Fechar galeria da casa" data-close-house>
+            <span aria-hidden="true">×</span> <span>Voltar ao app</span>
+          </button>
+        </div>
+      </div>
+      <div class="house-gallery-content">
+        <div class="house-gallery-grid" data-house-gallery></div>
+        <p class="house-gallery-empty" data-house-gallery-empty hidden>
+          Em breve, fotos e vídeos para você conhecer cada cantinho da nossa casa.
+        </p>
+      </div>
+    </dialog>
+
+    <section class="about-section" id="sobre">
+      <div class="about-image" role="img" aria-label="Fachada da Pizzaria Cristiano à noite"></div>
+      <div class="about-copy">
+        <p class="eyebrow section-eyebrow">BEM-VINDO À CRISTIANO</p>
+        <h2>Um lugar para<br><em>estar junto.</em></h2>
+        <p>A nossa história faz parte de cada encontro. Entre, fique à vontade e aproveite a experiência da Pizzaria Cristiano.</p>
+        <a class="about-link" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+
+    <section class="closing-note">
+      <span class="closing-star" aria-hidden="true">✳</span>
+      <p>Desde 1975,<br><em>fazendo parte de bons momentos.</em></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span class="brand-name">Cristiano<small>PIZZARIA · EST. 1975</small></span>
+    </a>
+    <button class="footer-qr-button" type="button" data-open-qr>Acessar por QR code <span aria-hidden="true">↗</span></button>
+    <p>Uma história que continua à mesa.</p>
+    <span class="footer-copy">© 2026 Pizzaria Cristiano</span>
+  </footer>
+
+  <dialog class="qr-dialog" id="qr-access" aria-labelledby="qr-title">
+    <div class="qr-card">
+      <button class="qr-close" type="button" aria-label="Fechar QR code" data-close-qr>×</button>
+      <p class="eyebrow section-eyebrow">PIZZARIA CRISTIANO · EST. 1975</p>
+      <h2 id="qr-title">Acesse pelo celular<span>.</span></h2>
+      <img class="qr-image" data-qr-image alt="QR code para acessar o site da Pizzaria Cristiano" hidden>
+      <p class="qr-message" data-qr-message></p>
+      <a class="qr-download" data-qr-download target="_blank" rel="noopener noreferrer" hidden>Abrir ou baixar QR code</a>
+    </div>
+  </dialog>
+</body>
+</html>
