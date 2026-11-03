@@ -1,0 +1,6 @@
+As fotos e os videos desta pasta aparecem na galeria ao clicar em "Conheça a casa".
+Eles estão cadastrados no arquivo script.js em ordem numérica: 01 a 09.
+
+Para acrescentar ou remover arquivos, atualize o array houseMedia em script.js.
+Os videos atuais estao em formato MOV; a reproducao depende do codec usado e do
+navegador. MP4 (H.264) e o formato mais compativel para videos na web.
