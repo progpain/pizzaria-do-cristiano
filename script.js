@@ -15,7 +15,6 @@ const menuPages = [
 const winePages = ["IMG_3735.jpg", "IMG_3736.jpg"];
 
 const houseMedia = [
-  { type: "video", filename: "01.MOV", caption: "Nossa casa — 01" },
   { type: "image", filename: "02.jpeg", alt: "Pizzaria Cristiano — foto 02", caption: "Nossa casa — 02" },
   { type: "image", filename: "03.jpeg", alt: "Pizzaria Cristiano — foto 03", caption: "Nossa casa — 03" },
   { type: "image", filename: "04.jpeg", alt: "Pizzaria Cristiano — foto 04", caption: "Nossa casa — 04" },
